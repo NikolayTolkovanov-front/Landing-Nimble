@@ -1,0 +1,32 @@
+<svg width="53" height="140" viewBox="0 0 53 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_14_277" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="53" height="140">
+<path d="M0 12L26.0441 0.781006L52.0883 12L52.0884 129.214L26.0442 139.231L9.53674e-05 129.214L0 12Z" fill="#05030E"/>
+</mask>
+<g mask="url(#mask0_14_277)">
+<path d="M9.15527e-05 32.6887L26.0442 21.4697L52.0884 32.6887V247.453L26.0442 257.47L9.15527e-05 247.453V32.6887Z" fill="#D5AB32"/>
+<g opacity="0.25">
+<path d="M9.15527e-05 11.8535L26.0442 0.634521L52.0884 11.8535V226.618L26.0442 236.635L9.15527e-05 226.618V11.8535Z" fill="#DC9839" fill-opacity="0.6"/>
+<mask id="mask1_14_277" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="53" height="237">
+<path d="M9.15527e-05 11.8535L26.0442 0.634521L52.0884 11.8535V226.618L26.0442 236.635L9.15527e-05 226.618V11.8535Z" fill="#7EE8A0"/>
+</mask>
+<g mask="url(#mask1_14_277)">
+<path d="M-18.4312 4.64136L26.4449 21.8706V237.035L-11.219 222.611L-18.4312 4.64136Z" fill="#DC9839" fill-opacity="0.6"/>
+</g>
+</g>
+<g opacity="0.5">
+<path d="M9.15527e-05 20.6685L26.0442 9.44946L52.0884 20.6685V235.432L26.0442 245.449L9.15527e-05 235.432V20.6685Z" fill="#DC9839" fill-opacity="0.6"/>
+<mask id="mask2_14_277" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="9" width="53" height="237">
+<path d="M9.15527e-05 20.6685L26.0442 9.44946L52.0884 20.6685V235.432L26.0442 245.449L9.15527e-05 235.432V20.6685Z" fill="#7EE8A0"/>
+</mask>
+<g mask="url(#mask2_14_277)">
+<path d="M-18.4312 13.4563L26.4449 30.6855V245.85L-11.219 231.426L-18.4312 13.4563Z" fill="#DC9839" fill-opacity="0.6"/>
+</g>
+</g>
+</g>
+<mask id="mask3_14_277" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="53" height="140">
+<path d="M9.15527e-05 12L26.0442 0.781006L52.0884 12V129.214L26.0442 139.231L9.15527e-05 129.214V12Z" fill="#7EE8A0"/>
+</mask>
+<g mask="url(#mask3_14_277)">
+<path d="M-18.4311 27.8081L26.4449 45.0373V260.202L-11.2189 245.778L-18.4311 27.8081Z" fill="#BF8C44" fill-opacity="0.6"/>
+</g>
+</svg>

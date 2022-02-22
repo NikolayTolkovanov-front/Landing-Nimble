@@ -1,0 +1,25 @@
+@mixin header-btn()
+    @include btn-none()
+    display: block
+    align-self: center
+    padding: 8px 28px
+    border-radius: 8px
+    font-weight: 600
+    line-height: 20px
+    transition: .3s
+
+@mixin partners__list-item($gradient, $graphic-line-width)
+    .list-item
+
+        &__divide-line
+            background-image: $gradient
+        
+        &__price-text
+            background-image: $gradient
+
+        &__graphic-line::before
+            width: $graphic-line-width
+            background-image: $gradient
+
+        &__graphic-percent
+            background-image: $gradient
