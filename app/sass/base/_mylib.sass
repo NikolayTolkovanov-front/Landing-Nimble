@@ -53,9 +53,14 @@
     font-weight: bold
     text-transform: uppercase
 
+@mixin gradient-text($gradient)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-image: $gradient
+
 @mixin gradient-border($border-width, $border-radius, $gradient)
     position: relative
-    
+
     &::before
         content: ""
         position: absolute

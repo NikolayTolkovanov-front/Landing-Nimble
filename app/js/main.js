@@ -1,20 +1,35 @@
-const firstBall    = $('.first-ball'),
-      middleBall   = $('.middle-ball'),
-      lastBall     = $('.last-ball'),
+// using__graphic
+const   usingSmallBall    = $('.using__small-ball'),
+        usingSmallCircle  = $('.using__small-ring'),
+        usingSmallShadow = $('.using__small-ball-shadow'),
 
-      firstCircle  = $('.first-ring'),
-      middleCircle = $('.middle-ring'),
-      lastCircle   = $('.last-ring'),
+        usingMiddleBall   = $('.using__middle-ball'),
+        usingMiddleCircle = $('.using__middle-ring'),
+        usingMiddleShadow = $('.using__middle-ball-shadow'),
 
-      firstShadow = $('.first-ball-shadow'),
-      middleShadow = $('.middle-ball-shadow'),
-      lastShadow = $('.last-ball-shadow')
+        usingBigBall     = $('.using__big-ball'),
+        usingBigCircle   = $('.using__big-ring'),
+        usingBigShadow = $('.using__big-ball-shadow')
 
-const aboutListItems = $('.about__list-more--item'),
-      aboutListTitle = $('.about__list-title'),
+// kibotron__graphic
+const   kibotronSmallBall    = $('.kibotron__small-ball'),
+        kibotronSmallCircle  = $('.kibotron__small-ring'),
+        kibotronSmallShadow = $('.kibotron__small-ball-shadow'),
 
-      stakingListItems = $('.staking__list-more--item'),
-      stakingListTitle = $('.staking__list-title')
+        kibotronMiddleBall   = $('.kibotron__middle-ball'),
+        kibotronMiddleCircle = $('.kibotron__middle-ring'),
+        kibotronMiddleShadow = $('.kibotron__middle-ball-shadow'),
+
+        kibotronBigBall     = $('.kibotron__big-ball'),
+        kibotronBigCircle   = $('.kibotron__big-ring'),
+        kibotronBigShadow = $('.kibotron__big-ball-shadow')
+
+// lists
+const   aboutListItems = $('.about__list-more--item'),
+        aboutListTitle = $('.about__list-title'),
+
+        stakingListItems = $('.staking__list-more--item'),
+        stakingListTitle = $('.staking__list-title')
 
 
 function openList(list, title) {
@@ -34,6 +49,10 @@ function toCenterBalls(ball, circle, shadow) {
 openList(aboutListItems, aboutListTitle)
 openList(stakingListItems, stakingListTitle)
 
-toCenterBalls(firstBall, firstCircle, firstShadow)
-toCenterBalls(middleBall, middleCircle, middleShadow)
-toCenterBalls(lastBall, lastCircle, lastShadow)
+toCenterBalls(usingSmallBall, usingSmallCircle, usingSmallShadow)
+toCenterBalls(usingMiddleBall, usingMiddleCircle, usingMiddleShadow)
+toCenterBalls(usingBigBall, usingBigCircle, usingBigShadow)
+
+toCenterBalls(kibotronSmallBall, kibotronSmallCircle, kibotronSmallShadow)
+toCenterBalls(kibotronMiddleBall, kibotronMiddleCircle, kibotronMiddleShadow)
+toCenterBalls(kibotronBigBall, kibotronBigCircle, kibotronBigShadow)
