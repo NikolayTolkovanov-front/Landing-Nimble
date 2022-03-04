@@ -1,0 +1,162 @@
+// ================== partners section ==================//
+.partners
+	padding-top: 220px
+	position: relative
+
+	&__body
+		display: flex
+		justify-content: flex-end
+
+	&__bg
+		pointer-events: none
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+
+	&__content
+		display: flex
+		flex-direction: column
+		align-items: end
+
+	&__list-title
+		padding-bottom: 50px
+		font-size: 24px
+		font-weight: 700
+		line-height: 29px
+		color: $white
+
+	&__list
+		margin-right: 50px
+		display: flex
+		flex-direction: column
+
+	.list-item
+		display: flex
+		flex-direction: column
+
+		&:not(:big-child)
+			margin-bottom: 20px
+
+		&__text
+			display: flex
+			align-items: center
+			columns: 3
+
+		&__level-text
+			word-break: break-word
+			font-size: 14px
+			font-weight: 500
+			color: $white
+
+		&__divide-line
+			margin: 0 25px
+			display: block
+			width: 36px
+			height: 1px
+			border-radius: 17px
+
+		&__price-text
+			font-size: 15px
+			font-weight: 500
+			line-height: 20px
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+
+
+		&__graphic
+			display: flex
+			align-items: center
+
+
+		&__graphic-line
+			position: relative
+			width: 418px
+			height: 8px
+			background-color: #3C3A46
+			border-radius: 25px
+
+			&::before
+				content: ""
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				height: 8px
+				border-radius: 25px
+
+		&__graphic-percent
+			margin-left: 30px
+			font-size: 26px
+			font-weight: 800
+			line-height: 32px
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+
+	.list-item--1
+		@include partners__list-item(linear-gradient(105.56deg, #E2F685 18.43%, #8AF9AD 89.58%), 100%)//
+
+	.list-item--2
+		@include partners__list-item(linear-gradient(139.33deg, #CAEE39 -14.59%, #E99A3D 99.86%), 50%)//
+
+	.list-item--3
+		@include partners__list-item(linear-gradient(139.33deg, #CAEE39 -14.59%, #E99A3D 99.86%), 50%)//
+
+	.list-item--4
+		@include partners__list-item(linear-gradient(139.33deg, #EED139 -14.59%, #E9713D 99.86%), 160px)//
+
+	.list-item--5
+		@include partners__list-item(linear-gradient(139.33deg, #EED139 -14.59%, #E9713D 99.86%), 160px)//
+
+	.list-item--6
+		@include partners__list-item(linear-gradient(139.33deg, #EE6439 -14.59%, #E9713D 99.86%), 25%)
+
+	.list-item--7
+		@include partners__list-item(linear-gradient(139.33deg, #EE6439 -14.59%, #E9713D 99.86%), 25%)
+
+	&__info
+		padding-top: 140px
+		display: flex
+
+	&__info-pointer
+		flex-shrink: 0
+
+	&__info-text
+		margin-left: 45px
+		max-width: 722px
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+		color: #8FA2A6
+
+	&__info-text--small
+		display: inline
+
+	&__list-more
+		display: inline
+
+		@media screen and ( max-width: 480px )
+			display: block
+
+	&__list-title
+		display: none
+		font-size: 14px
+		font-weight: 600
+		line-height: 20px
+		color: $green
+
+		@media screen and ( max-width: 480px )
+			margin-top: 30px
+			display: block
+
+	&__list-more--item
+		display: inline
+
+		@media screen and ( max-width: 480px )
+			display: block
+			display: none
+			opacity: 0
+
+			&:not(:last-child)
+				margin-bottom: 20px
+// ================== /partners section ==================//

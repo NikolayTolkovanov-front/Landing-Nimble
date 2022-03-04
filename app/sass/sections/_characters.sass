@@ -1,0 +1,100 @@
+// ================== characters section ==================//
+.characters
+	padding-top: 150px
+
+	&__body
+		display: flex
+
+	&__graphic
+		@include gradient-border(1px, 20px, linear-gradient(139.69deg, #05030E 3.61%, #7EE8A0 114.72%))
+		padding-bottom: 70px
+		position: relative
+		border-radius: 20px
+		background-color: $bg
+
+
+	&__graphic-content
+		position: relative
+
+	&__graphic-svg
+		width: 610px
+		height: 437px
+
+	&__graphic-name
+		position: absolute
+		font-size: 14px
+		font-weight: 500
+		line-height: 32px
+		color: $white
+
+		&--top
+			top: 41px
+			left: 227px
+
+		&--left
+			top: 124px
+			left: 446px
+
+		&--bottom
+			top: 274px
+			left: 84px
+
+	&__graphic-text
+		text-align: center
+
+	&__graphic-title
+		font-size: 16px
+		font-weight: 700
+		line-height: 23px
+		color: $green
+
+	&__graphic-subtitle
+		@include gradient-text(linear-gradient(105.56deg, #E2F685 18.43%, #8AF9AD 89.58%))
+		margin-top: 10px
+		font-size: 34px
+		font-weight: 800
+		line-height: 41px
+
+
+	&__text
+		padding-left: 168px
+		padding-top: 83px
+
+	&__text-title
+		font-size: 24px
+		font-weight: 700
+		line-height: 29px
+		color: $white
+
+	&__lists
+		display: flex
+		padding-top: 60px
+
+	&__list-name
+
+	&__list-name-item
+		display: flex
+		align-items: center
+		font-size: 16px
+		font-weight: 500
+		line-height: 44px
+		color: #8FA2A6
+
+		&::before
+			content: ""
+			margin-right: 30px
+			display: block
+			width: 36px
+			height: 1px
+			border-radius: 17px
+			background-image: linear-gradient(105.56deg, rgba(226, 246, 133, 0.6) 18.43%, rgba(138, 249, 173, 0.6) 89.58%)
+
+	&__list-value
+		margin-left: 30px
+
+	&__list-value-item
+		font-size: 16px
+		font-weight: 500
+		line-height: 44px
+		color: $white
+// ================== /characters section ==================//

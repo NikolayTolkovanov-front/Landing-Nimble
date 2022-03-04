@@ -1,0 +1,114 @@
+// ================== hero section ==================//
+.hero
+	min-height: 100vh
+
+	&__body
+		display: flex
+		flex-direction: column
+		position: relative
+
+	&__main
+		display: flex
+		padding-left: 70px
+
+	&__text
+		padding-top: 170px
+		max-width: 550px
+
+	&__title
+		font-size: 48px
+		font-weight: 800
+		line-height: 59px
+		color: $green
+
+	&__subtitle
+		padding-top: 25px
+		padding-bottom: 36px
+		font-size: 18px
+		font-weight: 500
+		line-height: 22px
+		color: #8FA2A6
+
+	&__btn
+		@include gradient-border(2px, 17px, linear-gradient(105.56deg, #E2F685 18.43%, #8AF9AD 89.58%))
+		padding: 20px 33px
+		border: 1px solid transparent
+		border-radius: 17px
+		outline: none
+		cursor: pointer
+		background-image: linear-gradient(105.56deg, #E2F685 18.43%, #8AF9AD 89.58%)
+		box-shadow: 0px 24px 64px rgba(138, 249, 173, 0.3)
+		font-weight: 600
+		font-size: 16px
+		line-height: 20px
+		color: $bg
+		transition: 0.3s
+
+		&:hover
+			background: $bg
+			color: $white
+			box-shadow: 0px 0px 64px rgba(138, 249, 173, 0.3)
+
+	&__scroll-down
+		width: 26px
+		height: 46px
+		margin: 180px auto 0 auto
+		animation: scroll-down 1.2s ease-in .5s 2
+
+	&__cards
+		padding: 140px 35px 0
+
+	&__swiper-slide
+		transition: 0.3s
+
+		&:hover
+			margin-right: 20px
+
+	&__card
+		@include gradient-border(1px, 20px, linear-gradient(139.69deg, #05030E 3.61%, #7EE8A0 114.72%))
+		align-items: center
+
+		&:hover
+			margin-top: -20px
+			margin-bottom: 20px
+			box-shadow: 0px 34px 74px rgba(162, 220, 137, 0.2)
+
+			.hero__card-img
+				border: 1px solid transparent
+				background-image: linear-gradient(139.33deg, #BBC423 -14.59%, #E99A3D 99.86%)
+				box-shadow: 0px 14px 44px rgba(220, 152, 57, 0.6)
+
+			&::before
+				background-image: linear-gradient(139.33deg, #BBC423 -14.59%, #E99A3D 99.86%)
+
+	&__card-content
+		display: flex
+		align-items: center
+		margin-top: 50px
+
+	&__card-img
+		width: 58px
+		height: 58px
+		display: flex
+		padding: 8px
+		justify-content: center
+		align-items: center
+		border: 1px solid #37583C
+		border-radius: 10px
+		background: $bg
+
+	&__card-title
+		margin-left: 20px
+		font-size: 16px
+		line-height: 23px
+		text-transform: uppercase
+		color: $white
+
+	&__card-text
+		padding: 52px 0
+		max-width: 150px
+		font-size: 14px
+		font-weight: 500
+		line-height: 23px
+		color: $white
+// ================== /hero section ==================//

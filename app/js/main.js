@@ -29,7 +29,10 @@ const   aboutListItems = $('.about__list-more--item'),
         aboutListTitle = $('.about__list-title'),
 
         stakingListItems = $('.staking__list-more--item'),
-        stakingListTitle = $('.staking__list-title')
+        stakingListTitle = $('.staking__list-title'),
+
+        partnersListItems = $('.partners__list-more--item'),
+        partnersListTitle = $('.partners__list-title')
 
 
 function openList(list, title) {
@@ -48,6 +51,7 @@ function toCenterBalls(ball, circle, shadow) {
 
 openList(aboutListItems, aboutListTitle)
 openList(stakingListItems, stakingListTitle)
+openList(partnersListItems, partnersListTitle)
 
 toCenterBalls(usingSmallBall, usingSmallCircle, usingSmallShadow)
 toCenterBalls(usingMiddleBall, usingMiddleCircle, usingMiddleShadow)
