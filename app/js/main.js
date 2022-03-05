@@ -40,10 +40,10 @@ function openList(list, title) {
 }
 
 function toCenterBalls(ball, circle, shadow) {
-          circleCenter = {
-              'x': Number(circle.attr('cx')),
-              'y': Number(circle.attr('cy'))
-              }
+    circleCenter = {
+        'x': Number(circle.attr('cx')),
+        'y': Number(circle.attr('cy'))
+    }
 
     ball.attr({'cx': circleCenter.x, 'cy': circleCenter.y})
     shadow.attr({'cx': circleCenter.x, 'cy': circleCenter.y})
