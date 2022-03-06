@@ -4,6 +4,8 @@
 
 	&__body
 		position: relative
+		display: flex
+		flex-direction: column
 
 	&__graphic
 		position: absolute
@@ -47,34 +49,49 @@
 		padding: 56px 80px 80px 40px
 		display: flex
 		flex-direction: row
-		
+
+		&:hover
+			margin-top: -20px
+			margin-bottom: 20px
+			box-shadow: 0px 34px 74px rgba(162, 220, 137, 0.2)
+
+			&::before
+				background-image: linear-gradient(139.33deg, #BBC423 -14.59%, #E99A3D 99.86%)
+
+
 
 	&__card-circle
-		width: 28px
-		height: 28px
-		display: flex
+		width: $kibotron__card-circle-parent--width
+		height: $kibotron__card-circle-parent--width
+		margin-left: calc((#{($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
+		margin-top: calc((#{($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
 		flex-shrink: 0
-		align-items: center
-		justify-content: center
 		position: relative
 		border-radius: 50%
+		background-color: #9FD87E
 
-		&::before
-			content: ""
-			width: 28px
-			height: 28px
-			position: absolute
-			top: 0
-			left: 0
-			border-radius: 50%
-			background-color: #9FD87E
-			opacity: .25
+	&__card-circle--first
+		background-color: $green
+
+	&__card-circle--second
+		background-color: #1B8D9F
+
+	&__card-circle--third
+		background-color: #00FFAA
+
+
+	&__card-circle--fourth
+		background-color: #8AF9AD
 
 	&__card-circle--inner
-		width: 11px
-		height: 11px
+		width: $kibotron__card-circle-child--width
+		height: $kibotron__card-circle-child--width
+		position: absolute
+		top: calc((#{-($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
+		left: calc((#{-($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
 		border-radius: 50%
-		background-color: #66ff0d
+		background-color: inherit
+		opacity: 0.25
 
 	&__card-text
 		margin-left: 30px
@@ -90,5 +107,31 @@
 		margin-top: 27px
 		font-size: 12px
 		line-height: 20px
+		color: $white
+
+	&__about
+		margin-top: 100px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__about-text
+		max-width: 800px
+		font-size: 24px
+		font-weight: 700
+		line-height: 29px
+		text-align: center
+		color: $white
+
+	&__about-link
+		margin-top: 50px
+		padding: 20px 90px
+		border-radius: 17px
+		display: flex
+		justify-content: center
+		align-items: center
+		background-image: linear-gradient(135deg, #00FFAA 0%, #4579F5 53.01%, #9C42F5 99.83%)
+
+	&__about-link > a
 		color: $white
 // ================== /kibotron section ==================//

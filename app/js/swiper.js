@@ -28,7 +28,7 @@ const kibotronSwiper = new Swiper('.kibotron__swiper', {
         rows: 2,
         fill: 'col'
     },
-    spaceBetween: 25,
+    spaceBetween: 35,
     allowTouchMove: false,
     wrapperClass: 'kibotron__swiper-wrapper'
 })
