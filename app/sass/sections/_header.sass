@@ -3,6 +3,13 @@
 	position: relative
 	z-index: 100
 
+	.menu-active // При нажатии на бургер добавляется классс
+		left: 0
+		padding: 20px
+		display: flex
+		flex-direction: column
+		owerflow: auto
+
 	&__body
 		display: flex
 		justify-content: space-between
@@ -11,7 +18,6 @@
 
 	&__logo
 		display: flex
-		
 
 	&__logo-svg
 		max-width: 46px
@@ -22,16 +28,45 @@
 		color: $white
 		font-size: 20px
 
+		@media screen and ( max-width: 320px )
+			display: none
+
+	&__buttons
+		display: none
+
+		@media screen and (max-width: 1200px)
+			display: flex
+			align-items: center
+
+	&__sign-in
+		margin-right: 30px
+
 	&__menu
 		display: flex
+		
+		@media screen and ( max-width: 1200px )
+			display: none
+			position: fixed
+			top: 0
+			left: -100%
+			height: 100vh
+			background-color: #45b83a
 
 	&__list
 		display: flex
 		align-items: center
 
+		@media screen and ( max-width: 1200px )
+			flex-direction: column
+			align-items: start
+
 	&__menu-item
 		margin-right: 50px
 		align-items: center
+
+		@media screen and ( max-width: 1200px )
+			margin-right: 0
+			margin-bottom: 20px
 
 	&__menu-item > a
 		color: $white
@@ -43,8 +78,19 @@
 		transition: opacity 0.2s
 
 	.link-menu:hover
-		&:after
+		&::after
 			transform: rotate(-180deg)
+
+		@media screen and ( max-width: 1200px )
+
+			&::after
+				display: none
+			
+			.header__sub-list
+				position: static
+				opacity: 1
+				visibility: visible
+				pointer-events: all
 
 		.header__sub-list
 			opacity: 1
@@ -55,7 +101,6 @@
 		content: ''
 		display: inline-block
 		margin-left: 10px
-		content: ''
 		border: 3.5px solid transparent
 		border-top: 5px solid #FFFFFF
 		transition: 0.2s
@@ -90,6 +135,10 @@
 		margin-right: 13px
 		transition: .3s
 
+		@media screen and ( max-width: 1200px )
+			margin-right: 0
+			align-self: flex-end
+
 		&:hover
 			background: $black
 			color: $white
@@ -100,6 +149,10 @@
 
 		background-color: $black
 		color: $white
+
+		@media screen and ( max-width: 1200px )
+			align-self: flex-end
+			margin-top: 20px
 
 		&:hover
 			background-image: linear-gradient(106.49deg, #E1F686 16.01%, #91F8AA 75.98%)

@@ -34,6 +34,16 @@ const   aboutListItems = $('.about__list-more--item'),
         partnersListItems = $('.partners__list-more--item'),
         partnersListTitle = $('.partners__list-title')
 
+// header
+const   burger = $('.header__burger'),
+        menu   = $('.header__menu')
+
+function addMenuClass(item, menu) {
+    item.on('click', () => {
+        menu.toggleClass('menu-active')
+        $('html, body').toggleClass("_blocked")
+    })
+}
 
 function openList(list, title) {
     title.on('click', () => list.toggleClass('list-active'))
@@ -48,6 +58,8 @@ function toCenterBalls(ball, circle, shadow) {
     ball.attr({'cx': circleCenter.x, 'cy': circleCenter.y})
     shadow.attr({'cx': circleCenter.x, 'cy': circleCenter.y})
 }
+
+addMenuClass(burger, menu)
 
 openList(aboutListItems, aboutListTitle)
 openList(stakingListItems, stakingListTitle)

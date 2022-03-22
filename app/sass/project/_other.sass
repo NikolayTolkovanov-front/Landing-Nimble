@@ -1,17 +1,24 @@
+._blocked
+	overflow: hidden
+
 .list-active // Для нажатия на списки
-	display: block !important
-	opacity: 1 !important
+	display: block
+	opacity: 1
 
 .blur-circle
+	display: block
 	position: absolute
-	width: 848px
-	height: 848px
+	min-width: 848px
+	min-height: 848px
 	left: -229px
 	top: -285px
 	border-radius: 50%
 	background: #0F3123
-	filter: blur(430px)
+	filter: blur(330px)
 	z-index: 0
+
+	@media screen and ( max-width: 630px )
+		display: none
 
 .main-img
 	position: absolute
@@ -20,6 +27,12 @@
 	z-index: -1
 	display: flex
 	justify-content: flex-end
+
+	@media screen and ( max-width: 630px )
+		margin-top: 20px
+
+	@media screen and ( max-width: 350px )
+		display: none
 
 .card-body
 	display: flex
