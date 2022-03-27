@@ -10,13 +10,28 @@
 
 	&__body
 		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
 		padding-left: 35px
 
+		@media screen and ( max-width: 1180px )
+			flex-direction: column-reverse
+			align-items: center
+			text-align: center
+
+		@media screen and ( max-width: 480px )
+			text-align: left
+			padding-left: 0
 	&__img
+		margin-right: 20px
 		height: 100%
 		position: relative
 		top: 0
 		left: 0
+
+		@media screen and ( max-width: 1180px )
+			margin-right: 0
+			margin-top: 75px
 
 	&__img-icon
 		position: absolute
@@ -25,7 +40,7 @@
 		transform: translate(-50%, -50%)
 
 	&__text
-		margin-left: 190px
+		// margin-left: 190px
 
 	&__text-title
 		font-size: 24px
