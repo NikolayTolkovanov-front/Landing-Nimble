@@ -2,7 +2,40 @@ const heroSwiper = new Swiper('.hero__swiper', {
     slidesPerView: 4,
     allowTouchMove: false,
     spaceBetween: 30,
-    wrapperClass: 'hero__swiper-wrapper'
+    wrapperClass: 'hero__swiper-wrapper',
+
+    navigation: {
+        nextEl: '.hero__cards-btn--next',
+        prevEl: '.hero__cards-btn--prev'
+    },
+
+    breakpoints: {
+        1320: {
+            slidesPerView: 4,
+            allowTouchMove: true,
+        },
+
+        970: {
+            slidesPerView: 3,
+            allowTouchMove: true,
+            
+        },
+
+        670: {
+            slidesPerView: 2,
+            allowTouchMove: true,
+        },
+
+        460: {
+            slidesPerView: 1.5,
+            allowTouchMove: true,
+        },
+
+        320: {
+            slidesPerView: 1,
+            allowTouchMove: true,
+        }
+    }
 })
 
 const stakingSwiper = new Swiper('.staking__swiper', {

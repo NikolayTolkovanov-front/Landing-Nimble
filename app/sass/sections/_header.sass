@@ -4,11 +4,8 @@
 	z-index: 100
 
 	.menu-active // При нажатии на бургер добавляется классс
-		left: 0
-		padding: 20px
-		display: flex
-		flex-direction: column
-		owerflow: auto
+
+		transform: translateX(0)
 
 	&__body
 		display: flex
@@ -43,14 +40,18 @@
 
 	&__menu
 		display: flex
-		
+		transition: transform .2s
+
 		@media screen and ( max-width: 1200px )
-			display: none
+			height: 100vh
+			padding: 20px
+			flex-direction: column
 			position: fixed
 			top: 0
-			left: -100%
-			height: 100vh
+			left: 0
 			background-color: #45b83a
+			owerflow: auto
+			transform: translateX(-100%)
 
 	&__list
 		display: flex
@@ -137,7 +138,6 @@
 
 		@media screen and ( max-width: 1200px )
 			margin-right: 0
-			align-self: flex-end
 
 		&:hover
 			background: $black
@@ -151,7 +151,6 @@
 		color: $white
 
 		@media screen and ( max-width: 1200px )
-			align-self: flex-end
 			margin-top: 20px
 
 		&:hover

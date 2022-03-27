@@ -6,6 +6,7 @@ html
     // background-color: red
 
 body
+    overflow-x: hidden
     font-family: 'Montserrat', sans-serif 
     width: 100%
     scroll-behavior: smooth
@@ -19,6 +20,10 @@ body
     padding-left: 15px
     padding-right: 15px
     position: relative
+
+    @media screen and ( max-width: 680px )
+        padding-left: 43px
+        padding-right: 43px
 
 .wrapper
     max-width: 1370px
