@@ -71,4 +71,4 @@ toCenterBalls(usingBigBall, usingBigCircle, usingBigShadow)
 
 toCenterBalls(kibotronSmallBall, kibotronSmallCircle, kibotronSmallShadow)
 toCenterBalls(kibotronMiddleBall, kibotronMiddleCircle, kibotronMiddleShadow)
-toCenterBalls(kibotronBigBall, kibotronBigCircle, kibotronBigShadow)
+toCenterBalls(kibotronBigBall, kibotronBigCircle, kibotronBigShadow)/** */
