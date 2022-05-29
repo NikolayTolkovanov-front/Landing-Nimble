@@ -4,7 +4,6 @@
 	z-index: 100
 
 	.menu-active // При нажатии на бургер добавляется классс
-
 		transform: translateX(0)
 
 	&__body
@@ -42,16 +41,39 @@
 		display: flex
 		transition: transform .2s
 
+
+
 		@media screen and ( max-width: 1200px )
 			height: 100vh
-			padding: 20px
+			padding: 30px
 			flex-direction: column
 			position: fixed
 			top: 0
 			left: 0
 			background-color: #45b83a
-			owerflow: auto
+			overflow: auto
 			transform: translateX(-100%)
+
+	&__escape
+		text-align: center
+		display: none
+		position: absolute
+		top: 0
+		right: 20px
+		font-size: 50px
+		font-weight: 700
+		color: $white
+		cursor: pointer
+		transform: rotate(45deg)
+		transform-origin: center
+		z-index: 10
+		transition: 0.2s
+
+		&:hover
+			color: $black
+
+		@media screen and ( max-width: 1200px )
+			display: inline
 
 	&__list
 		display: flex
@@ -68,6 +90,7 @@
 		@media screen and ( max-width: 1200px )
 			margin-right: 0
 			margin-bottom: 20px
+			width: 100%
 
 	&__menu-item > a
 		color: $white
@@ -76,7 +99,6 @@
 
 	.link-menu
 		position: relative
-		transition: opacity 0.2s
 
 	.link-menu:hover
 		&::after
@@ -86,12 +108,13 @@
 
 			&::after
 				display: none
-			
+
 			.header__sub-list
 				position: static
 				opacity: 1
 				visibility: visible
 				pointer-events: all
+				transition: 0.3s
 
 		.header__sub-list
 			opacity: 1
@@ -107,7 +130,9 @@
 		transition: 0.2s
 
 	&__sub-list
-		width: calc( #{100%} + 50px )
+		width: 100%
+		display: flex
+		flex-direction: column
 		position: absolute
 		top: 100%
 		left: 0

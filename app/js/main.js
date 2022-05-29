@@ -36,9 +36,14 @@ const   aboutListItems = $('.about__list-more--item'),
 
 // header
 const   burger = $('.header__burger'),
-        menu   = $('.header__menu')
+        menu   = $('.header__menu'),
+        cross = $('.header__escape')
 
-function addMenuClass(item, menu) {
+function closeAdaptiveMenu() {
+    cross.on('click', () => console.log("clicked"))
+}
+
+function changeMenuClass(item, menu) {
     item.on('click', () => {
         menu.toggleClass('menu-active')
         $('html, body').toggleClass("_blocked")
@@ -59,7 +64,8 @@ function toCenterBalls(ball, circle, shadow) {
     shadow.attr({'cx': circleCenter.x, 'cy': circleCenter.y})
 }
 
-addMenuClass(burger, menu)
+changeMenuClass(burger, menu)
+changeMenuClass(cross, menu)
 
 openList(aboutListItems, aboutListTitle)
 openList(stakingListItems, stakingListTitle)
