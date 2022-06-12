@@ -1,182 +1,182 @@
 // ================== header ==================//
 .header
-	position: relative
-	z-index: 100
+    position: relative
+    z-index: 100
 
-	.menu-active // При нажатии на бургер добавляется классс
-		transform: translateX(0)
+    .menu-active // При нажатии на бургер добавляется классс
+        transform: translateX(0)
 
-	&__body
-		display: flex
-		justify-content: space-between
-		align-items: center
-		padding-top: 66px
+    &__body
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 66px
 
-	&__logo
-		display: flex
+    &__logo
+        display: flex
 
-	&__logo-svg
-		max-width: 46px
-		max-height: 45px
+    &__logo-svg
+        max-width: 46px
+        max-height: 45px
 
-	&__logo-text
-		margin-left: 24px
-		color: $white
-		font-size: 20px
+    &__logo-text
+        margin-left: 24px
+        color: $white
+        font-size: 20px
 
-		@media screen and ( max-width: 480px )
-			display: none
+        @media screen and ( max-width: 480px )
+            display: none
 
-	&__buttons
-		display: none
+    &__buttons
+        display: none
 
-		@media screen and (max-width: 1200px)
-			display: flex
-			align-items: center
+        @media screen and (max-width: 1200px)
+            display: flex
+            align-items: center
 
-	&__sign-in
-		margin-right: 30px
+    &__sign-in
+        margin-right: 30px
 
-	&__menu
-		display: flex
-		transition: transform .2s
+    &__menu
+        display: flex
+        transition: transform .2s
 
-		@media screen and ( max-width: 1200px )
-			height: 100vh
-			padding: 30px
-			flex-direction: column
-			position: fixed
-			top: 0
-			left: 0
-			background-color: #45b83a
-			overflow: auto
-			transform: translateX(-100%)
+        @media screen and ( max-width: 1200px )
+            height: 100vh
+            padding: 30px
+            flex-direction: column
+            position: fixed
+            top: 0
+            left: 0
+            background-color: #45b83a
+            overflow: auto
+            transform: translateX(-100%)
 
-	&__escape
-		text-align: center
-		display: none
-		position: absolute
-		top: 0
-		right: 20px
-		font-size: 50px
-		font-weight: 700
-		color: $white
-		cursor: pointer
-		transform: rotate(45deg)
-		transform-origin: center
-		z-index: 10
-		transition: 0.2s
+    &__escape
+        text-align: center
+        display: none
+        position: absolute
+        top: 0
+        right: 20px
+        font-size: 50px
+        font-weight: 700
+        color: $white
+        cursor: pointer
+        transform: rotate(45deg)
+        transform-origin: center
+        z-index: 10
+        transition: 0.2s
 
-		&:hover
-			color: $black
+        &:hover
+            color: $black
 
-		@media screen and ( max-width: 1200px )
-			display: inline
+        @media screen and ( max-width: 1200px )
+            display: inline
 
-	&__list
-		display: flex
-		align-items: center
+    &__list
+        display: flex
+        align-items: center
 
-		@media screen and ( max-width: 1200px )
-			flex-direction: column
-			align-items: start
+        @media screen and ( max-width: 1200px )
+            flex-direction: column
+            align-items: start
 
-	&__menu-item
-		margin-right: 50px
-		align-items: center
+    &__menu-item
+        margin-right: 50px
+        align-items: center
 
-		@media screen and ( max-width: 1200px )
-			margin-right: 0
-			margin-bottom: 20px
-			width: 100%
+        @media screen and ( max-width: 1200px )
+            margin-right: 0
+            margin-bottom: 20px
+            width: 100%
 
-	&__menu-item > a
-		color: $white
-		font-size: 16px
-		font-weight: 600
+    &__menu-item > a
+        color: $white
+        font-size: 16px
+        font-weight: 600
 
-	.link-menu
-		position: relative
+    .link-menu
+        position: relative
 
-	.link-menu:hover
-		&::after
-			transform: rotate(-180deg)
+    .link-menu:hover
+        &::after
+            transform: rotate(-180deg)
 
-		@media screen and ( max-width: 1200px )
+        @media screen and ( max-width: 1200px )
 
-			&::after
-				display: none
+            &::after
+                display: none
 
-			.header__sub-list
-				position: static
-				opacity: 1
-				visibility: visible
-				pointer-events: all
-				transition: 0.3s
+            .header__sub-list
+                position: static
+                opacity: 1
+                visibility: visible
+                pointer-events: all
+                transition: 0.3s
 
-		.header__sub-list
-			opacity: 1
-			visibility: visible
-			pointer-events: all
+        .header__sub-list
+            opacity: 1
+            visibility: visible
+            pointer-events: all
 
-	.link-menu::after
-		content: ''
-		display: inline-block
-		margin-left: 10px
-		border: 3.5px solid transparent
-		border-top: 5px solid #FFFFFF
-		transition: 0.2s
+    .link-menu::after
+        content: ''
+        display: inline-block
+        margin-left: 10px
+        border: 3.5px solid transparent
+        border-top: 5px solid #FFFFFF
+        transition: 0.2s
 
-	&__sub-list
-		width: 100%
-		display: flex
-		flex-direction: column
-		position: absolute
-		top: 100%
-		left: 0
-		opacity: 0
-		visibility: hidden
-		pointer-events: none
-		border: 1px solid #37583C
-		border-radius: 8px
+    &__sub-list
+        width: 100%
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 100%
+        left: 0
+        opacity: 0
+        visibility: hidden
+        pointer-events: none
+        border: 1px solid #37583C
+        border-radius: 8px
 
-	&__sub-link
-		padding: 10px
+    &__sub-link
+        padding: 10px
 
-	&__sub-link > a
-		color: $white
-		font-size: 16px
-		font-weight: 600
+    &__sub-link > a
+        color: $white
+        font-size: 16px
+        font-weight: 600
 
-		&:hover
-			text-decoration: underline
+        &:hover
+            text-decoration: underline
 
-	&__reg-btn
-		@include header-btn()
-		@include gradient-border(2px, 8px, linear-gradient(180deg, #E2F685 0%, #8AF9AD 100%))
+    &__reg-btn
+        @include header-btn()
+        @include gradient-border(2px, 8px, linear-gradient(180deg, #E2F685 0%, #8AF9AD 100%))
 
-		background-image: linear-gradient(180deg, #E2F685 0%, #8AF9AD 100%)
-		margin-right: 13px
-		transition: .3s
+        background-image: linear-gradient(180deg, #E2F685 0%, #8AF9AD 100%)
+        margin-right: 13px
+        transition: .3s
 
-		@media screen and ( max-width: 1200px )
-			margin-right: 0
+        @media screen and ( max-width: 1200px )
+            margin-right: 0
 
-		&:hover
-			background: $black
-			color: $white
+        &:hover
+            background: $black
+            color: $white
 
-	&__author-btn
-		@include header-btn()
-		@include gradient-border(2px, 8px, linear-gradient(106.49deg, #E1F686 16.01%, #91F8AA 75.98%))
+    &__author-btn
+        @include header-btn()
+        @include gradient-border(2px, 8px, linear-gradient(106.49deg, #E1F686 16.01%, #91F8AA 75.98%))
 
-		background-color: $black
-		color: $white
+        background-color: $black
+        color: $white
 
-		@media screen and ( max-width: 1200px )
-			margin-top: 20px
+        @media screen and ( max-width: 1200px )
+            margin-top: 20px
 
-		&:hover
-			background-image: linear-gradient(106.49deg, #E1F686 16.01%, #91F8AA 75.98%)
-			color: $black
+        &:hover
+            background-image: linear-gradient(106.49deg, #E1F686 16.01%, #91F8AA 75.98%)
+            color: $black
 // ================== /header ==================//

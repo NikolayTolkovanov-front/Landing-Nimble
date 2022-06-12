@@ -1,149 +1,145 @@
 // ================== kibotron section ==================//
 .kibotron
-	padding-top: 150px
+    padding-top: 150px
 
-	&__body
-		position: relative
-		display: flex
-		flex-direction: column
+    &__body
+        position: relative
+        display: flex
+        flex-direction: column
 
-	&__graphic
-		position: absolute
-		top: -55%
-		left: -21%
-		z-index: -1
+    &__graphic
+        position: absolute
+        top: -55%
+        left: -21%
+        z-index: -1
 
-	&__small-ball, &__small-ball-shadow
-		animation: kibotron__small-ball 3s linear infinite
-		@include orbit_anim(kibotron__small-ball, 102px)
+    &__small-ball, &__small-ball-shadow
+        animation: kibotron__small-ball 3s linear infinite
+        @include orbit_anim(kibotron__small-ball, 102px)
 
-	&__middle-ball, &__middle-ball-shadow
-		animation: kibotron__middle-ball 10s linear infinite
-		@include orbit_anim(kibotron__middle-ball, 472px)
+    &__middle-ball, &__middle-ball-shadow
+        animation: kibotron__middle-ball 10s linear infinite
+        @include orbit_anim(kibotron__middle-ball, 472px)
 
-	&__big-ball, &__big-ball-shadow
-		animation: kibotron__big-ball 6s linear infinite
-		@include orbit_anim(kibotron__big-ball, 213px)
+    &__big-ball, &__big-ball-shadow
+        animation: kibotron__big-ball 6s linear infinite
+        @include orbit_anim(kibotron__big-ball, 213px)
 
-	&__title
-		display: flex
-		align-items: center
-		justify-content: end
-		margin-right: 380px
+    &__title
+        display: flex
+        align-items: center
+        justify-content: end
+        margin-right: 380px
 
-	&__title-text
-		margin-left: 22px
-		font-size: 48px
-		font-weight: 800
-		line-height: 59px
-		color: $white
+    &__title-text
+        margin-left: 22px
+        font-size: 48px
+        font-weight: 800
+        line-height: 59px
+        color: $white
 
-	&__cards
-		display: flex
-		justify-content: end
-		padding-top: 70px
-		min-width: 0
+    &__cards
+        display: flex
+        justify-content: end
+        padding-top: 70px
+        min-width: 0
 
-	&__card
-		@include gradient-border(1px, 20px, linear-gradient(139.69deg, #05030E 3.61%, #7EE8A0 114.72%))
-		padding: 56px 80px 80px 40px
-		display: flex
-		flex-direction: row
+    &__card
+        @include gradient-border(1px, 20px, linear-gradient(139.69deg, #05030E 3.61%, #7EE8A0 114.72%))
+        padding: 56px 80px 80px 40px
+        display: flex
+        flex-direction: row
 
-		&:hover
-			margin-top: -20px
-			margin-bottom: 20px
-			box-shadow: 0px 34px 74px rgba(162, 220, 137, 0.2)
+        &:hover
+            margin-top: -20px
+            margin-bottom: 20px
+            box-shadow: 0px 34px 74px rgba(162, 220, 137, 0.2)
 
-			&::before
-				background-image: linear-gradient(139.33deg, #BBC423 -14.59%, #E99A3D 99.86%)
+            &::before
+                background-image: linear-gradient(139.33deg, #BBC423 -14.59%, #E99A3D 99.86%)
 
+    &__card-circle
+        width: $kibotron__card-circle-parent--width
+        height: $kibotron__card-circle-parent--width
+        margin-left: calc((#{($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
+        margin-top: calc((#{($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
+        flex-shrink: 0
+        position: relative
+        border-radius: 50%
+        background-color: #9FD87E
 
+    &__card-circle--first
+        background-color: $green
 
-	&__card-circle
-		width: $kibotron__card-circle-parent--width
-		height: $kibotron__card-circle-parent--width
-		margin-left: calc((#{($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
-		margin-top: calc((#{($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
-		flex-shrink: 0
-		position: relative
-		border-radius: 50%
-		background-color: #9FD87E
+    &__card-circle--second
+        background-color: #1B8D9F
 
-	&__card-circle--first
-		background-color: $green
+    &__card-circle--third
+        background-color: #00FFAA
 
-	&__card-circle--second
-		background-color: #1B8D9F
+    &__card-circle--fourth
+        background-color: #8AF9AD
 
-	&__card-circle--third
-		background-color: #00FFAA
+    &__card-circle--inner
+        width: $kibotron__card-circle-child--width
+        height: $kibotron__card-circle-child--width
+        position: absolute
+        top: calc((#{-($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
+        left: calc((#{-($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
+        border-radius: 50%
+        background-color: inherit
+        opacity: 0.25
 
+    &__card-text
+        margin-left: 30px
 
-	&__card-circle--fourth
-		background-color: #8AF9AD
+    &__card-text-title
+        @include gradient-text(linear-gradient(135deg, #00FFAA 0%, #4579F5 53.01%, #9C42F5 99.83%))
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 700
+        line-height: 20px
 
-	&__card-circle--inner
-		width: $kibotron__card-circle-child--width
-		height: $kibotron__card-circle-child--width
-		position: absolute
-		top: calc((#{-($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
-		left: calc((#{-($kibotron__card-circle-child--width - $kibotron__card-circle-parent--width)} / 2))
-		border-radius: 50%
-		background-color: inherit
-		opacity: 0.25
+    &__card-text-subtitle
+        margin-top: 27px
+        font-size: 12px
+        line-height: 20px
+        color: $white
 
-	&__card-text
-		margin-left: 30px
+    &__about
+        margin-top: 100px
+        display: flex
+        flex-direction: column
+        align-items: center
 
-	&__card-text-title
-		@include gradient-text(linear-gradient(135deg, #00FFAA 0%, #4579F5 53.01%, #9C42F5 99.83%))
-		text-transform: uppercase
-		font-size: 14px
-		font-weight: 700
-		line-height: 20px
+    &__about-text
+        max-width: 800px
+        font-size: 24px
+        font-weight: 700
+        line-height: 29px
+        text-align: center
+        color: $white
 
-	&__card-text-subtitle
-		margin-top: 27px
-		font-size: 12px
-		line-height: 20px
-		color: $white
+    &__about-link
+        @include gradient-border(1px, 17px, linear-gradient(135deg, #00FFAA 0%, #4579F5 53.01%, #9C42F5 99.83%))
+        margin-top: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        outline: none
+        cursor: pointer
+        border-radius: 17px
+        background-image: linear-gradient(135deg, #00FFAA 0%, #4579F5 53.01%, #9C42F5 99.83%)
+        color: $bg
+        transition: 0.3s
 
-	&__about
-		margin-top: 100px
-		display: flex
-		flex-direction: column
-		align-items: center
+        &:hover
+            background: $bg
+            color: $white
+            box-shadow: 0px 0px 64px rgba(138, 249, 173, 0.3)
 
-	&__about-text
-		max-width: 800px
-		font-size: 24px
-		font-weight: 700
-		line-height: 29px
-		text-align: center
-		color: $white
-
-	&__about-link
-		@include gradient-border(1px, 17px, linear-gradient(135deg, #00FFAA 0%, #4579F5 53.01%, #9C42F5 99.83%))
-		margin-top: 50px
-		display: flex
-		justify-content: center
-		align-items: center
-		outline: none
-		cursor: pointer
-		border-radius: 17px
-		background-image: linear-gradient(135deg, #00FFAA 0%, #4579F5 53.01%, #9C42F5 99.83%)
-		color: $bg
-		transition: 0.3s
-
-		&:hover
-			background: $bg
-			color: $white
-			box-shadow: 0px 0px 64px rgba(138, 249, 173, 0.3)
-			
-
-	&__about-link > a
-		padding: 20px 90px
-		display: block
-		color: $white
+    &__about-link > a
+        padding: 20px 90px
+        display: block
+        color: $white
 // ================== /kibotron section ==================//
