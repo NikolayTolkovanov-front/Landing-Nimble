@@ -14,6 +14,14 @@
         line-height: 41px
         color: $green
 
+        @media screen and ( max-width: 1088px )
+            flex-direction: column
+            text-align: center
+
+        @media screen and ( max-width: 515px )
+            font-size: 18px
+
+
     &__email-text
         margin-left: 30px
         font-weight: 800
@@ -25,11 +33,17 @@
             border-bottom-color: $white
             color: $white
 
+        @media screen and ( max-width: 1088px )
+            margin-left: 0
+
     &__social
         margin-top: 105px
-        display: grid
-        grid-template-columns: repeat(5, 1fr)
-        gap: 15px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+
+        // @media screen and ( max-width: 685px )
 
     &__social-item
         border: 1px solid
@@ -42,12 +56,17 @@
             opacity: 1
 
     &__social-link
+        min-height: 120px
         padding: 20px
         display: flex
         flex-direction: column
         align-items: center
+        justify-content: space-between
 
     &__social-icon
+        min-width: 50px
+        min-height: 50px
+        flex-grow: 1
 
     &__social-item-text
         @include gradient-text(linear-gradient(105.56deg, #E2F685 18.43%, #8AF9AD 89.58%))
