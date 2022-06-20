@@ -141,4 +141,46 @@ const kibotronSwiper = new Swiper('.kibotron__swiper', {
     spaceBetween: 35,
     allowTouchMove: false,
     wrapperClass: 'kibotron__swiper-wrapper',
+    updateOnWindowResize: false,
+
+    navigation: {
+        nextEl: '.kibotron__cards-btn--next',
+    },
+
+    breakpoints: {
+        770: {
+            slidesPerView: 4,
+            grid: {
+                rows: 2,
+                fill: 'col',
+            },
+        },
+        690: {
+            slidesPerView: 2,
+            updateOnWindowResize: true,
+            allowTouchMove: true,
+            grid: {
+                rows: 1,
+                fill: 'row',
+            }
+        },
+        550: {
+            slidesPerView: 1.5,
+            updateOnWindowResize: true,
+            allowTouchMove: true,
+            grid: {
+                rows: 1,
+                fill: 'row',
+            }
+        },
+        320: {
+            slidesPerView: 1,
+            updateOnWindowResize: true,
+            allowTouchMove: true,
+            grid: {
+                rows: 1,
+                fill: 'row',
+            }
+        }
+    }
 });
